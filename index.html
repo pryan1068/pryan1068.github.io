@@ -3,133 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P. Ryan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Work in Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px 0;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">P. Ryan</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://linkedin.com/in/pryan1068" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>P. Ryan</h1>
-                <p class="intro">Builder and innovator passionate about creating immersive experiences and practical solutions through hardware and software integration.</p>
-                <a href="https://linkedin.com/in/pryan1068" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #1a1a2e;"></div>
-                    <h3>Virtual Reality Headset Concepts</h3>
-                    <p>Conceptual designs and prototypes for VR headset hardware.</p>
-                    <a href="projects/vr-headset.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #16213e;"></div>
-                    <h3>Mixed Reality Projector</h3>
-                    <p>Innovative projector technology blending digital and physical spaces.</p>
-                    <a href="projects/mr-projector.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #0f3460;"></div>
-                    <h3>Racing Cockpits</h3>
-                    <p>Custom-built racing simulation cockpits with realistic controls.</p>
-                    <a href="projects/racing-cockpits.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #533483;"></div>
-                    <h3>Flight Simulator Cockpits</h3>
-                    <p>Full-motion flight simulation cockpit designs and implementations.</p>
-                    <a href="projects/flight-cockpits.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #e94560;"></div>
-                    <h3>Makerspace Garage</h3>
-                    <p>Community workspace with tools, equipment, and collaborative projects.</p>
-                    <a href="projects/makerspace.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #f39c12;"></div>
-                    <h3>Tile Menus</h3>
-                    <p>Custom UI/UX framework for intuitive menu systems.</p>
-                    <a href="projects/tile-menus.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #3498db;"></div>
-                    <h3>GPS TAK</h3>
-                    <p>GPS integration with TAK (Team Awareness Kit) system.</p>
-                    <a href="projects/gps-tak.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #2ecc71;"></div>
-                    <h3>PyTable</h3>
-                    <p>Python-based data table library for data visualization and manipulation.</p>
-                    <a href="projects/pytable.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #9b59b6;"></div>
-                    <h3>PDF Merge</h3>
-                    <p>Tool for merging and managing PDF documents.</p>
-                    <a href="projects/pdf-merge.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #e74c3c;"></div>
-                    <h3>Kismet2CoT</h3>
-                    <p>Integration layer converting Kismet wireless data to CoT format.</p>
-                    <a href="projects/kismet2cot.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #34495e;"></div>
-                    <h3>Serial Servo Controller for Android</h3>
-                    <p>Android app for controlling servo motors via serial communication.</p>
-                    <a href="projects/serial-servo.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #1abc9c;"></div>
-                    <h3>Remote PTT</h3>
-                    <p>Remote push-to-talk system for radio communications.</p>
-                    <a href="projects/remote-ptt.html" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #d35400;"></div>
-                    <h3>ROS Arduino Bridge port to Pololu Zumo robot</h3>
-                    <p>ROS integration for Pololu Zumo robot with Arduino bridge.</p>
-                    <a href="projects/ros-zumo.html" class="project-link">View Project →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 P. Ryan. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="container">
+        <h1>Work in Progress</h1>
+        <div class="spinner"></div>
+        <p>Something amazing is coming soon...</p>
+    </div>
 </body>
 </html>
